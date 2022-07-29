@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guessing Game</title>
+    <script src="script.js"></script>
+    <script>window.onload(alert("The Game is Loaded")); </script>
+</head>
+
+<body>
+    <h1 style="text-align: center">Number Guessing Game</h1>
+    <h2 style="text-align: left">The Rules:</h2>
+
+    <ol style="text-align: left">
+        <li>Click "Start" to begin the game. A random number between 1 and 50 will be generated</li>
+        <li>Enter your guess and click submit.</li>
+        <li>If your guess is correct, you win.</li>
+        <li>You have 10 guesses. Good Luck</li>
+    </ol>
+
+    <div id="startButton">
+        <button onclick="startGame()">Start!</button>
+    </div>
+    <br>
+    <div id="guessForm" hidden>
+            <label for="numGuess">Make your Best Guess!:</label><br>
+            <input type="number" id="numGuess" value="" required><br>
+            <button onclick="submitGuess()">Guess!</button>
+    </div>
+    <br>
+    <h2>Game Stats:</h2>
+    <p id="p2">Total Guesses = 0</p>
+    <p id="p4" style="color: Red">Turns Left = 10</p>
+    <p id="p3">Previous Guesses = No Guesses Yet!</p>
+    
+    <button style="position: relative;
+    bottom: 50%;" onclick="reload()">Restart Game</button>
+    <br>
+    <p><b>Lifetime Stats:</b></p>
+    <p id="totalGamesPlayed">Total Games Played = 0</p>
+    <p id="lifetimeGuesses2Win">Average Guesses to Win: No Wins Yet!</p>
+
+</body>
+
+</html>

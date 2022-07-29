@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>UTM Link Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</script>
+</head>
+<body>
+    <h1 onclick="reloadPage()">UTM Link Generator</h1>
+
+    <div>
+        <h2>UTM OPTIONS</h2>
+        <p> Please set your options in the field below:</p>
+        <!--Remove Default Options-->
+        <label for="cSource">Campaign Source</label>
+        <input id="campSource" name="cSource" type="text" value="Newsletter" required>
+        <label for="cMedium">Campaign Medium</label>
+        <input id="campMed" name="cMedium" type="text" value="Email" required>
+        <label for="cName">Campaign Name</label>
+        <input id="campName" name="cName" type="text" value="Summer Sale 2022" required>
+        <button id="clearButton" onclick="clearOptions()">Clear Options</button>
+    </div>
+    <br>
+    <div>
+        <label for="urltext">Please Enter URL's in the Box Below: 
+            <br> (Seperate multiple emails with a single space)</label><br><br>
+        <textarea class="textaread" id="url-input">enteryourURLHere.com</textarea>
+        <br>
+        <button class="button" id="generatorButton" onclick="generate()">Generate Me!</button>
+        <button class="button" id="resetPage" onclick="reloadPage()">RESET ALL</button>
+    </div>
+    <br>
+    <textarea class="textaread" id="generated" hidden></textarea>
+    <br>
+    <button class="button" id="copyText" onclick="copyToClip()" hidden>Select All</button>
+
+    
+</body>
