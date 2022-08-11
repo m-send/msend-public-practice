@@ -1,0 +1,13 @@
+html {
+    font-family: sans-serif;
+}
+nav {
+    display: inline-flex;
+    list-style: none;
+    margin: auto;
+    text-align: justify;
+}
+.navElement {
+    padding: 2%;
+    margin: 2%;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ENCODE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <p><a href="index.html">HOME</a></p>
+            <p><a href="decode.html">DECODE</a></p>            
+        </nav>
+    </header>
+    <h1>ENCODE</h1>
+    <form>
+        <label>Choose a Key for the Cipher! (A Digit Between 1 and 25)</label>
+        <input type="number" id="key-for-encode" value="2" required>
+        <br>
+        <label>Text to Encode:</label>
+        <input type="text" id="txt-to-encode" value="testing"></input>
+    </form>
+    
+    <button id="encode-button" onclick="encode()">Encode!</button>
+    <br>
+    <p id="encodeOutput"></p>
+    <p id="encodeKey"></p>
+    <!--<p>Test Case Success = vguvkpi </p>-->
+    <div id="slideshow">
+    <img id="cheekyCZ" src="cheekyCaeser.jpeg" alt="Ceaser Meme" hidden>
+    </div>
+</body>
+</html>
