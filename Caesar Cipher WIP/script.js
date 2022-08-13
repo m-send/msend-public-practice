@@ -23,7 +23,7 @@
 |       1.White Space will output "b"
 |       2.Submission of specialChar or numbers needs to be disabled (e.g !"£$%^") √
 |       3.If the newChar > alphabet.length the value is dropped. 
-|            e.g y = 25 + index = 2 --> dropped value as 27 > alphabet.length (25)
+|            e.g y = 25 + index = 2 --> dropped value as 27 > alphabet.length (25) √
 ---------------------------------------------------------------------------------------
 */
 
@@ -33,6 +33,7 @@
 var key ;
 var textToEncode ;
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",
+"p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z","a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o",
 "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~0123456789]/;
 var outputTextArray = [];
